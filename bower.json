@@ -1,0 +1,21 @@
+{
+  "name": "animal-inventory",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Sailor Winkelman <sailorwinkelman@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.2.1"
+  }
+}
