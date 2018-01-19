@@ -6,7 +6,7 @@ import { Animal } from './animal.model';
   template: `
   <div class="animal-card">
     <h2>Animals</h2>
-    <h2>Test Animal: {{childAnimalList[1].name}}</h2>
+    <h2>Test Animal: {{childAnimalList[2].name}}</h2>
     <ul *ngFor= "let currentAnimal of childAnimalList">
       <h3>{{currentAnimal.species}}</h3>
       <li>Name: {{currentAnimal.name}}</li>
