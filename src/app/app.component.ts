@@ -15,7 +15,7 @@ import { Animal } from './animal.model';
     <div class="animals">
       <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
     </div><!-->animals<-->
-    <edit-animal [childSelectedAnimal]="selectedAnimal"></edit-animal>
+    <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
   </div>`,
   styleUrls: ['./app.component.css']
 })
@@ -39,6 +39,10 @@ export class AppComponent {
   editAnimal(clickedAnimal){
     // alert(`you want to edit, huh? good news: this feature is coming soon`);
     this.selectedAnimal = clickedAnimal;
+  }
+
+  finishedEditing() {
+    this.selectedAnimal = null;
   }
 
 

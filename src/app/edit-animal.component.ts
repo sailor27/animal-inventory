@@ -14,6 +14,7 @@ import { Animal } from './animal.model';
     <input [(ngModel)]="childSelectedAnimal.sex">
     <input [(ngModel)]="childSelectedAnimal.likes">
     <input [(ngModel)]="childSelectedAnimal.dislikes">
+    <button (click)="doneButtonClicked()">Done</button>
 
   </div>
   `
@@ -21,6 +22,11 @@ import { Animal } from './animal.model';
 
 export class EditAnimalComponent{
   @Input() childSelectedAnimal: Animal;
+  @Output() doneButtonClickedSender = new EventEmitter();
+
+  doneButtonClicked(){
+    this.doneButtonClickedSender.emit();
+  }
 
 
 }
