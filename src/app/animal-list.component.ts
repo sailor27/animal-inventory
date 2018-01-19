@@ -14,7 +14,7 @@ import { Animal } from './animal.model';
   </div>
   <div class="animal-card">
     <h2>Test Animal: {{childAnimalList[1].name}} is 1 year old</h2>
-    <ul *ngFor= "let currentAnimal of childAnimalList | age">
+    <ul *ngFor= "let currentAnimal of childAnimalList | age:filterByAge">
       <h3>{{currentAnimal.species}}</h3>
       <li>Name: {{currentAnimal.name}}</li>
       <li>Age: {{currentAnimal.age}}</li>
