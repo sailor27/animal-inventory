@@ -17,7 +17,7 @@ import { Animal } from './animal.model';
       <li>Sex: {{currentAnimal.sex}}</li>
       <li>Likes: {{currentAnimal.likes}}</li>
       <li>Dislikes: {{currentAnimal.dislikes}}</li>
-      <button (click)="editAnimalButtonHasBeenClicked()"> Edit </button>
+      <button (click)="editAnimalButtonHasBeenClicked(currentAnimal)"> Edit </button>
     </ul>
   </div>
   `

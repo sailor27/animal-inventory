@@ -13,8 +13,9 @@ import { Animal } from './animal.model';
       <h5>View current animals, edit animal info, and add new animals</h5>
     </div>
     <div class="animals">
-      <animal-list [childAnimalList]="masterAnimalList" (clickSender) ="editAnimal($event)"></animal-list>
+      <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
     </div><!-->animals<-->
+    <edit-animal [childSelectedAnimal]="selectedAnimal"></edit-animal>
   </div>`,
   styleUrls: ['./app.component.css']
 })
@@ -29,14 +30,14 @@ export class AppComponent {
   masterAnimalList: Animal[] = [
     new Animal("Arctic Fox", "Moon", 2, "Carnivore", "Northern Trail", 5, "Female", "Cool Shade", "Loud Noises"),
     new Animal("Ocelot", "Prince", 4, "Carnivore", "Tropical Rain Forest Building", 6, "Male", "Laying in the sunshine", "Toys that are not rope-based"),
-    new Animal("Northwest Black-Tailed Deer", "Tinkerbell", 8, "Herbivore", "Northern Trail", 2, "Female", "Delicate roots and leaves", "Loud Nouises")
+    new Animal("Northwest Black-Tailed Deer", "Tinkerbell", 8, "Herbivore", "Northern Trail", 2, "Female", "Delicate roots and leaves", "Loud Noises")
   ];
 
   selectedAnimal = null;
 
 
   editAnimal(clickedAnimal){
-    alert("you want to edit, huh? good news: this feature is coming soon");
+    // alert(`you want to edit, huh? good news: this feature is coming soon`);
     this.selectedAnimal = clickedAnimal;
   }
 
