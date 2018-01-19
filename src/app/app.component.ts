@@ -15,6 +15,7 @@ import { Animal } from './animal.model';
     <div class="animals">
       <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
     </div><!-->animals<-->
+    <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
     <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
   </div>`,
   styleUrls: ['./app.component.css']
@@ -43,6 +44,10 @@ export class AppComponent {
 
   finishedEditing() {
     this.selectedAnimal = null;
+  }
+
+  addAnimal(newAnimalFromChild: Animal) {
+    this.masterAnimalList.push(newAnimalFromChild);
   }
 
 
