@@ -13,7 +13,7 @@ import { Animal } from './animal.model';
       <h5>View current animals, edit animal info, and add new animals</h5>
     </div>
     <div class="animals">
-      <animal-list [childAnimalList]="masterAnimalList"></animal-list>
+      <animal-list [childAnimalList]="masterAnimalList" (clickSender) ="editAnimal($event)"></animal-list>
     </div><!-->animals<-->
   </div>`,
   styleUrls: ['./app.component.css']
