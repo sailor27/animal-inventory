@@ -16,11 +16,14 @@ body{
 }
 
 .container{
-
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .animals {
   display: flex;
+
+  border: 1px dashed white;
 }
 
 animal-list{
@@ -30,14 +33,16 @@ animal-list{
 .animal-card{
   color: white;
   border: 3px solid white;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
+  text-align: center;
 }
 
 ul.animal-card{
   list-style: none;
   padding: 15px;
+}
+
+li{
+
 }
 
 input {
