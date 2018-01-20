@@ -35,6 +35,10 @@ The following tools were used to create this project:
 
 
 ## Setup
+
+```
+ npm install -g @angular/cli 
+```
 * Clone repository
 * Run $npm install in terminal
 * Run $bower install in terminal

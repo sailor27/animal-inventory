@@ -12,8 +12,8 @@ import { Animal } from './animal.model';
       <option value="matureAnimals"> Mature Animals </option>
     </select>
   </div>
-  <div class="animal-card">
-    <ul *ngFor= "let currentAnimal of childAnimalList | age:filterByAge">
+  <div class="col-lg-5">
+    <ul class="animal-card" *ngFor= "let currentAnimal of childAnimalList | age:filterByAge">
       <h3>{{currentAnimal.species}}</h3>
       <li>Name: {{currentAnimal.name}}</li>
       <li>Age: {{currentAnimal.age}}</li>
@@ -35,7 +35,7 @@ export class AnimalListComponent{
   @Output() clickSender = new EventEmitter();
 
   filterByAge: string = "allAnimals";
-  
+
   onChange(optionFromMenu) {
     this.filterByAge = optionFromMenu;
   }

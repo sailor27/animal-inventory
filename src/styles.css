@@ -1,1 +1,73 @@
-/* You can add global styles to this file, and also import other style files */
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  /*border:1px dashed #000;*/
+}
+
+.jumbotron{
+  background-color: #B29772;
+  color: white;
+  border: 3px dotted white;
+  text-align: center;
+}
+
+body{
+  background-color: #B29772;
+}
+
+.container{
+
+}
+
+.animals {
+  display: flex;
+}
+
+animal-list{
+  width: 100%;
+}
+
+.animal-card{
+  color: white;
+  border: 3px solid white;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+ul.animal-card{
+  list-style: none;
+  padding: 15px;
+}
+
+input {
+  width: 250px;
+  background-color: black;
+  color: white;
+}
+
+label{
+  font-weight: bold;
+}
+
+form-group{
+  text-align: center;
+}
+new-animal, edit-animal {
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+
+
+}
+
+button{
+  color: white;
+  background: none;
+  margin: 5px;
+  padding-left:15px;
+  padding-right: 15px;
+  border-radius: 5px;
+  border: 3px solid white;
+}
