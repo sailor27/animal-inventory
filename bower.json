@@ -6,7 +6,7 @@
     "Sailor Winkelman <sailorwinkelman@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/sailor27/animal-inventory",
   "ignore": [
     "**/.*",
     "node_modules",

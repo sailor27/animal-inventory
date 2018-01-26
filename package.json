@@ -45,5 +45,16 @@
     "ts-node": "~4.1.0",
     "tslint": "~5.9.1",
     "typescript": "~2.5.3"
-  }
+  },
+  "description": "Sailor Winkelman 01/19/18",
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sailor27/animal-inventory.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/sailor27/animal-inventory/issues"
+  },
+  "homepage": "https://github.com/sailor27/animal-inventory#readme"
 }

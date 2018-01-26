@@ -16,29 +16,51 @@ body{
 }
 
 .container{
-  display: flex;
-  flex-flow: column nowrap;
+  /*display: flex;
+  flex-flow: column nowrap;*/
 }
+
+.animal-options{
+  height: 100px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid white;
+}
+
+
 
 .animals {
   display: flex;
-
+  flex-direction: row;
+  justify-content: center;
   border: 1px dashed white;
 }
 
 animal-list{
-  width: 100%;
+
 }
 
-.animal-card{
-  color: white;
-  border: 3px solid white;
-  text-align: center;
+
+.new{
+  background-color: pink;
 }
 
 ul.animal-card{
+  width: 50%;
+  color: white;
+  border: 3px solid white;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
   list-style: none;
   padding: 15px;
+  margin: 8px;
 }
 
 li{
@@ -63,7 +85,6 @@ new-animal, edit-animal {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
-
 
 }
 
