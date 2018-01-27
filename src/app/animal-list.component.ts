@@ -4,7 +4,7 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'animal-list',
   templateUrl: './animal-list.component.html',
-	styleUrls: ['./animal-list.component.css']
+	styleUrls: ['./animal-list.component.scss']
 })
 
 export class AnimalListComponent{
