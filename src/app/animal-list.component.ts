@@ -3,38 +3,8 @@ import { Animal } from './animal.model';
 
 @Component({
   selector: 'animal-list',
-  template: `
-
-
-  <div class="animal-options">
-    <div class ="form-group">
-      <label>Sort by Age:</label>
-      <select (change)="onChange($event.target.value)" >
-        <option value="allAnimals" selected="selected"> All Animals </option>
-        <option value="youngAnimals"> Young Animals </option>
-        <option value="matureAnimals"> Mature Animals </option>
-      </select>
-    </div>
-  </div>
-
-<div class= "animals">
-  <ul class="animal-card" *ngFor= "let currentAnimal of childAnimalList | age:filterByAge">
-    <h3>{{currentAnimal.species}}</h3>
-    <li>Name: {{currentAnimal.name}}</li>
-    <li>Age: {{currentAnimal.age}}</li>
-    <li>Diet: {{currentAnimal.diet}}</li>
-    <li>Location: {{currentAnimal.location}}</li>
-    <li>Caretakers: {{currentAnimal.caretakers}}</li>
-    <li>Sex: {{currentAnimal.sex}}</li>
-    <li>Likes: {{currentAnimal.likes}}</li>
-    <li>Dislikes: {{currentAnimal.dislikes}}</li>
-
-    <button (click)="editAnimalButtonHasBeenClicked(currentAnimal)"> Edit </button>
-  </ul>
-</div>
-<button>New Entry</button>
-
-  `
+  templateUrl: './animal-list.component.html',
+	styleUrls: ['./animal-list.component.css']
 })
 
 export class AnimalListComponent{

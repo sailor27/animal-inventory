@@ -5,25 +5,7 @@ import { routing } from './app.routing';
 
 @Component({
   selector: 'app-root',
-  template: `
-  <div class="container">
-    <div class="jumbotron">
-      <h1>{{title}}</h1>
-      <h5>View current animals, edit animal info, and add new animals</h5>
-    </div>
-
-    <div class="animals">
-      <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
-    </div><!-->animals<-->
-
-  
-
-    <div class="forms row">
-      <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
-      <edit-animal class="col-lg-5" [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
-    </div>
-
-  </div>`,
+  templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
