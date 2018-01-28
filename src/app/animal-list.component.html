@@ -10,20 +10,24 @@
       </select>
     </div>
   </div>
-
-<div class= "animals">
-  <ul class="animal-card" *ngFor= "let currentAnimal of childAnimalList | age:filterByAge">
-    <h3>{{currentAnimal.species}}</h3>
-    <li>Name: {{currentAnimal.name}}</li>
-    <li>Age: {{currentAnimal.age}}</li>
-    <li>Diet: {{currentAnimal.diet}}</li>
-    <li>Location: {{currentAnimal.location}}</li>
-    <li>Caretakers: {{currentAnimal.caretakers}}</li>
-    <li>Sex: {{currentAnimal.sex}}</li>
-    <li>Likes: {{currentAnimal.likes}}</li>
-    <li>Dislikes: {{currentAnimal.dislikes}}</li>
-
-    <button (click)="editAnimalButtonHasBeenClicked(currentAnimal)"> Edit </button>
-  </ul>
+<div class="animals row">
+	<div class=" animal col-md-6 col-lg-6 col-xl-4" *ngFor= "let currentAnimal of childAnimalList | age:filterByAge">
+		<div class="card">
+			<h3 class= "card-title">{{currentAnimal.species}}</h3>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item">Name: {{currentAnimal.name}}</li>
+				<li class="list-group-item">Age: {{currentAnimal.age}}</li>
+				<div>
+					<li>Diet: {{currentAnimal.diet}}</li>
+					<li>Location: {{currentAnimal.location}}</li>
+					<li>Caretakers: {{currentAnimal.caretakers}}</li>
+					<li>Sex: {{currentAnimal.sex}}</li>
+					<li>Likes: {{currentAnimal.likes}}</li>
+					<li>Dislikes: {{currentAnimal.dislikes}}</li>
+				</div>
+			</ul>
+			<button class="btn btn-dark" (click)="editAnimalButtonHasBeenClicked(currentAnimal)"> Edit </button>
+		</div>
+	</div>
 </div>
-<button>New Entry</button>
+<button class="btn btn-dark" >New Entry</button>

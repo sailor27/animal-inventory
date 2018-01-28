@@ -4,10 +4,7 @@
 		<h5>View current animals, edit animal info, and add new animals</h5>
 	</div>
 
-	<div class="animals">
-		<animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
-	</div><!-->animals<-->
-
+	<animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
 
 	<div class="forms row">
 		<new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
