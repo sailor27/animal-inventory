@@ -1,41 +1,47 @@
-<h3>Add New Animal</h3>
-<div>
-	<div class="form-group">
-		<label>Species</label>
-		<input #newSpecies>
-	</div>
-	<div class="form-group">
-		<label>Name</label>
-		<input #newName>
-	</div>
-	<div class="form-group">
-		<label>Age</label>
-		<input #newAge type="number">
-	</div>
-	<div class="form-group">
-		<label>Diet</label>
-		<input #newDiet>
-	</div>
-	<div class="form-group">
-		<label>Location</label>
-		<input #newLocation>
-	</div>
-	<div class="form-group">
-		<label>Caretakers</label>
-		<input #newCaretakers type="number">
-	</div>
-	<div class="form-group">
-		<label>Sex</label>
-		<input #newSex>
-	</div>
-	<div class="form-group">
-		<label>Likes</label>
-		<input #newLikes>
-	</div>
-	<div class="form-group">
-		<label>Dislikes</label>
-		<input #newDislikes>
-	</div>
 
-	<button (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value=''; newName.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';"> Add </button>
-</div>
+<div class="new">
+	<div class="card">
+		<h3 class="card-title">Add New Animal</h3>
+		<div class="card-body">
+			<div class="list-group list-group-flush">
+				<div class="form-group list-group-item">
+					<label>Species</label>
+					<input #newSpecies>
+				</div>
+				<div class="form-group list-group-item">
+					<label>Name</label>
+					<input #newName>
+				</div>
+				<div class="form-group list-group-item">
+					<label>Age</label>
+					<input #newAge type="number">
+				</div>
+				<div class="form-group list-group-item">
+					<label>Diet</label>
+					<input #newDiet>
+				</div>
+				<div class="form-group list-group-item">
+					<label>Location</label>
+					<input #newLocation>
+				</div>
+				<div class="form-group list-group-item">
+					<label>Caretakers</label>
+					<input #newCaretakers type="number">
+				</div>
+				<div class="form-group list-group-item">
+					<label>Sex</label>
+					<input #newSex>
+				</div>
+				<div class="form-group list-group-item">
+					<label>Likes</label>
+					<input #newLikes>
+				</div>
+				<div class="form-group list-group-item">
+					<label>Dislikes</label>
+					<input #newDislikes>
+				</div>
+			</div><!-->list-group<-->
+			<button class="btn btn-dark"(click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value=''; newName.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';"> Add </button>
+		</div><!-->card body <-->
+	</div><!-->card <-->
+</div><!-->new<-->

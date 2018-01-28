@@ -4,6 +4,7 @@
 	border: 3px solid white;
 	text-align: center;
 	width: 100%;
+	margin: 0;
 }
 
 .container{
@@ -15,10 +16,9 @@ animal-list{
 	width: 100%;
 }
 
-new-animal, edit-animal {
-  text-align: center;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-
+.forms{
+	padding: 10px 0px;
+	display: flex;
+	flex-flow: row;
+	align-items: flex-end;
 }

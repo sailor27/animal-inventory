@@ -4,7 +4,7 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'edit-animal',
   templateUrl: './edit-animal.component.html',
-	styleUrls: ['./edit-animal.component.scss']
+	styleUrls: ['./new-animal.component.scss']
 })
 
 export class EditAnimalComponent{

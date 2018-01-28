@@ -1,0 +1,32 @@
+.new{
+	height: 100%;
+
+}
+
+.card{
+	padding-top: 10px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	color: white;
+	border: 3px solid white;
+	text-align: center;
+	background-color: #B29772;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+
+	.list-group-item{
+		background-color: inherit;
+		button{
+			background-color: #000;
+		}
+	}
+	.form-group{
+		input {
+			text-align: center;
+			background-color: black;
+			color: white;
+		}
+
+	}
+}
