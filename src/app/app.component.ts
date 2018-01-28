@@ -19,16 +19,15 @@ export class AppComponent {
   ];
 
   selectedAnimal = null;
-
-
-
-  newColor(animal){
-    return "new col-lg-5";
-  }
+	showingAddForm = null;
 
   editAnimal(clickedAnimal){
     this.selectedAnimal = clickedAnimal;
   }
+
+	addingAnimal(){
+		this.showingAddForm = "true";
+	}
 
   finishedEditing() {
     this.selectedAnimal = null;
@@ -36,6 +35,7 @@ export class AppComponent {
 
   addAnimal(newAnimalFromChild: Animal) {
     this.masterAnimalList.push(newAnimalFromChild);
+		this.showingAddForm = null;
   }
 
 

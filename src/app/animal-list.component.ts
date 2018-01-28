@@ -11,7 +11,9 @@ export class AnimalListComponent{
   @Input() childAnimalList: Animal[];
 
   @Output() clickSender = new EventEmitter();
-  filterByAge: string = "allAnimals";
+	@Output() clickSender2 = new EventEmitter();
+
+	filterByAge: string = "allAnimals";
 
   onChange(optionFromMenu) {
     this.filterByAge = optionFromMenu;
@@ -21,4 +23,10 @@ export class AnimalListComponent{
   editAnimalButtonHasBeenClicked(animalToEdit: Animal){
     this.clickSender.emit(animalToEdit);
   }
+
+	addAnimalButtonHasBeenClicked(yes){
+		this.clickSender2.emit("yes");
+		console.log("sending add click");
+	}
+
 }

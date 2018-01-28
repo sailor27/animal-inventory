@@ -9,7 +9,7 @@
         <option value="matureAnimals"> Mature Animals </option>
       </select>
     </div>
-		<button class="btn btn-light" >New Entry</button>
+		<button (click)= "addAnimalButtonHasBeenClicked(yes)" class="btn btn-light" >New Entry</button>
   </div>
 <div class="animals row">
 	<div class=" animal col-md-6 col-lg-6 col-xl-4" *ngFor= "let currentAnimal of childAnimalList | age:filterByAge">
